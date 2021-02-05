@@ -1,15 +1,16 @@
 .slider {
+  position: relative;
 
    & .slider-container {
      width: 100%;
-     height: 490px;
+     height: 555px;
      background-image: url("../img/banner/img1.png");
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
 
      & .slider-container__content {
-       padding: 36px 0 50px;
+       padding: 41px 0 65px;
        display: flex;
        flex-direction: column;
        justify-content: space-between;
@@ -17,15 +18,16 @@
        height: 100%;
 
        & p {
-         font-size: 48px;
+         font-size: 55px;
          font-weight: 600;
          font-style: italic;
+         letter-spacing: 0.02em;
          color: $white;
        }
 
        & a {
          display: flex;
-         padding: 10px 15px;
+         padding: 13px 18px 9px 18px;;
          background-color: $green;
          color: $white;
          border-bottom-left-radius: 21px;
@@ -64,7 +66,46 @@
   }
 }
 
+.slick-dotted.slick-slider {
+  margin-bottom: 23px;
+}
+
+
 // slider for phone
 .slider-img-menu {
   display: none;
 }
+
+.slider__button {
+  position: absolute;
+  top: 51%;
+  margin-top: -20px;
+  font-size: 0;
+  width: 47px;
+  height: 47px;
+  border: 1px solid $white;
+  border-radius: 50px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.prev {
+  left: 44px;
+  z-index: 9999;
+}
+.prev::after {
+  content: '<';
+  font-size: 20px;
+  color: $white;
+  font-weight: 700;
+}
+.next {
+  right: 44px;
+}
+.next::after {
+  content: '>';
+  font-size: 20px;
+  color: $white;
+  font-weight: 700;
+  margin-left: 4px;
+}
+

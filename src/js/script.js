@@ -1,5 +1,4 @@
 @@include('_slick.min.js');
-@@include('_menu.js');
 
 $(document).ready(function(){
     $('.slider').slick({
@@ -7,7 +6,9 @@ $(document).ready(function(){
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        arrows: true
+        arrows: true,
+        prevArrow: '<button type="button" class="slider__button prev"></button>',
+        nextArrow: '<button type="button" class="slider__button next"></button>',
     });
 });
 
