@@ -12,100 +12,79 @@
     @@include('_header.html')
 
 <!--    slider-->
-    <div class="slider">
-        <div class="slider-container slider-container-1">
-            <div class="slider-container__content">
-                <p>ProFaceX</p>
-                <a href="#">ПОДРОБНЕЕ
-                    <span class="slider-arrows white-arrows">
-                        <span class="arrow"></span>
-                    </span>
-                </a>
-            </div>
+    <div id="slider" class="slider">
+        <div class="slider-container">
+            <img src="img/banner/img1.png" alt="Banner" class="img-slider__desktop">
+            <img src="img/banner/img2.png" alt="Banner" class="img-slider__tablet">
+            <img src="img/banner/img3.png" alt="Banner" class="img-slider__mobil">
         </div>
-        <div class="slider-container slider-container-2">
-            <div class="slider-container__content">
-                <p>ProFaceX2</p>
-                <a href="#">ПОДРОБНЕЕ
-                    <span class="slider-arrows white-arrows">
-                        <span class="arrow"></span>
-                    </span>
-                </a>
-            </div>
+        <div class="slider-container">
+            <img src="img/banner/img1.png" alt="Banner" class="img-slider__desktop">
+            <img src="img/banner/img2.png" alt="Banner" class="img-slider__tablet">
+            <img src="img/banner/img3.png" alt="Banner" class="img-slider__mobil">
         </div>
-        <div class="slider-container slider-container-3">
-            <div class="slider-container__content">
-                <p>ProFaceX3</p>
-                <a href="#">ПОДРОБНЕЕ
-                    <span class="slider-arrows white-arrows">
-                        <span class="arrow"></span>
-                    </span>
-                </a>
-            </div>
+        <div class="slider-container">
+            <img src="img/banner/img1.png" alt="Banner" class="img-slider__desktop">
+            <img src="img/banner/img2.png" alt="Banner" class="img-slider__tablet">
+            <img src="img/banner/img3.png" alt="Banner" class="img-slider__mobil">
         </div>
-        <div class="slider-container slider-container-3">
-            <div class="slider-container__content">
-                <p>ProFaceX3</p>
-                <a href="#">ПОДРОБНЕЕ
-                    <span class="slider-arrows white-arrows">
-                        <span class="arrow"></span>
-                    </span>
-                </a>
-            </div>
+        <div class="slider-container">
+            <img src="img/banner/img1.png" alt="Banner" class="img-slider__desktop">
+            <img src="img/banner/img2.png" alt="Banner" class="img-slider__tablet">
+            <img src="img/banner/img3.png" alt="Banner" class="img-slider__mobil">
         </div>
     </div>
 
     <section class="img-menu">
         <div class="img-menu__list">
-            <div class="img-menu__item">
+            <a class="img-menu__item">
                 <div class="img-menu__item-img">
                     <img src="img/img_menu/image2.png" alt="image2">
                 </div>
                 <p class="img-menu__item-title">Учет рабочего времени</p>
-            </div>
+            </a>
         </div>
         <div class="img-menu__list">
-            <div class="img-menu__item">
+            <a class="img-menu__item">
                 <div class="img-menu__item-img">
                     <img src="img/img_menu/image3.png" alt="image2">
                 </div>
                 <p class="img-menu__item-title">Умный замок</p>
-            </div>
+            </a>
         </div>
         <div class="img-menu__list">
-            <div class="img-menu__item">
+            <a class="img-menu__item">
                 <div class="img-menu__item-img">
                     <img src="img/img_menu/image4.png" alt="image2">
                 </div>
                 <p class="img-menu__item-title">Системы контроля доступа (СКУД)</p>
-            </div>
+            </a>
         </div>
         <div class="img-menu__list">
-            <div class="img-menu__item">
+            <a class="img-menu__item">
                 <div class="img-menu__item-img">
                     <img src="img/img_menu/image5.png" alt="image2">
                 </div>
                 <p class="img-menu__item-title">Системы контроля прохода</p>
-            </div>
+            </a>
         </div>
         <div class="img-menu__list">
-            <div class="img-menu__item">
+            <a class="img-menu__item">
                 <div class="img-menu__item-img">
                     <img src="img/img_menu/image6.png" alt="image2">
                 </div>
                 <p class="img-menu__item-title">Встраиваемые модули</p>
-            </div>
+            </a>
         </div>
         <div class="img-menu__list">
-            <div class="img-menu__item">
+            <a class="img-menu__item">
                 <div class="img-menu__item-img">
                     <img src="img/img_menu/image7.png" alt="image2">
                 </div>
                 <p class="img-menu__item-title">Видеонаблюдение</p>
-            </div>
+            </a>
         </div>
     </section>
-
 
     <!--    slider for phone-->
     <div class="slider-img-menu">
@@ -174,10 +153,11 @@
             </div>
         </div>
         <div class="popular-products__catalog-link">
-            <a href="#" title="catalog-link">Каталог продукции
-                <span class="dark-arrows">
-                    <span class="arrow"></span>
-                </span>
+            <a href="#" title="catalog-link" class="btn">
+                <span class="button">Каталог продукции</span>
+                <span class="icon-1 icon icon-shevron"></span>
+                <span class="icon-2 icon icon-shevron"></span>
+                <span class="icon-3 icon icon-shevron"></span>
             </a>
         </div>
     </section>
@@ -193,11 +173,7 @@
                         <h6>MKW-H</h6>
                         <p class="sale-products__description">MKW-V и MKW-H - это водонепроницаемые автономные устройства контроля доступа с металлическим корпусом IP65 и клавиатурой.</p>
                         <div class="sale-products__link">
-                            <a href="#" class="sale-products__btn-grey">купить
-                                <span class="dark-arrows">
-                                    <span class="arrow"></span>
-                                </span>
-                            </a>
+                            <a href="#" class="sale-products__btn-grey">купить</a>
                         </div>
                     </div>
                 </div>
@@ -212,11 +188,7 @@
                         <p class="sale-products__description">Wi-Fi камера для измерения температуры тела.</p>
                         <p class="price">10 321 ₽</p>
                         <div class="sale-products__link">
-                            <a href="#" class="sale-products__btn-green">купить
-                                <span class="white-arrows">
-                                    <span class="arrow"></span>
-                                </span>
-                            </a>
+                            <a href="#" class="sale-products__btn-green">купить</a>
                         </div>
                     </div>
                 </div>

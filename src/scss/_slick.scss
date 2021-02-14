@@ -70,6 +70,10 @@
     }
     img {
         display: block;
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
     }
     &.slick-loading img {
         display: none;
@@ -94,7 +98,4 @@
         height: auto;
         border: 1px solid transparent;
     }
-}
-.slick-arrow.slick-hidden {
-    display: none;
 }

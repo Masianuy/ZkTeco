@@ -23,6 +23,14 @@ $(document).ready(function(){
     });
 });
 
+/**********Open/close hidden menu********************************/
+$('header .button_hamburger').click(function(){
+    $(this).toggleClass('active');
+    $('body').toggleClass('overflow_hidden');
+    $('.big-menu__wrapper').toggleClass('open');
+})
+
+
 function testWebP(callback) {
     var webP = new Image(); webP.onload = webP.onerror = function () {
         callback(webP.height == 2);
